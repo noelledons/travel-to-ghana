@@ -16,6 +16,7 @@ Travel booking page for users travelling to Ghana, Africa. Users are able to sel
 ## Other Technologies
 - Font Awesome
 - Google Fonts
+- Favicon
 
 ## Available Scripts
 In the project directory, you can find the code for:
