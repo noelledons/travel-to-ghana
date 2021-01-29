@@ -1,9 +1,9 @@
-# Travel to Ghana (Landing Page)
+# Travel to Ghana
 
 You can find the website [here](https://noelledons.github.io/travel-to-ghana/).
 
 ## Summary
-landing page for a wesbite about travelling to Ghana - Users can see why they should travel to Ghana, Top Destinations and special packages for their trip.
+Travel booking page for users travelling to Ghana, Africa. Users are able to select their chosen destination, date and number of Adults. Additionally, they can see why they should travel to Ghana, top destinations and special packages available for their trip.
 
 ## Languages
 - HTML
