@@ -8,23 +8,18 @@
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Montserrat' sans-serif;
+  font-family: 'Montserrat'sans-serif;
   color: #222;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .titles1 {
   font-family: 'Caveat Brush', cursive;
   font-size: 70px;
 }
-
-/* .padding {
-  padding-top: 0.9rem;
-  padding-bottom: 2rem;
-} */
 
 hr {
   border-top: 2px solid #b4b4b4;
@@ -77,15 +72,15 @@ hr {
 #welcome .container-fluid {
   padding: 5% 12%;
   padding-bottom: 0%;
-  background:#f9f9f9;
+  background: #f9f9f9;
 }
 
-.fa-landmark, .fa-users, .fa-wpexplorer {;
+.fa-landmark, .fa-users, .fa-wpexplorer {
+  ;
   margin: 1rem;
   font-size: 4em;
   color: #00d8d5;
 }
-
 
 /* Gallery */
 .gallery {
@@ -188,7 +183,6 @@ hr {
 }
 
 /* Packages */
-
 .packages {
   padding: 0 0 90px;
 }
@@ -286,26 +280,21 @@ hr {
   box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 }
 
-
-
 /* Connect */
-
 #footer1 .container-fluid {
   padding: 5% 12%;
   background: #fff;
+  text-align: center;
 }
 
-.footer-head{
+.footer-head {
   padding-bottom: 5%;
 }
 
 .social {
-  padding-bottom: 5%;
-}
-
-.social a {
-  font-size: 2.5em;
-  padding: 3rem;
+  padding: 20px;
+  font-size: 3rem;
+  margin: 20px 10px;
 }
 
 .fa-facebook-f,
@@ -324,16 +313,17 @@ hr {
   color: #7F8C8D;
 }
 
-.hrstyle  {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+.hrstyle {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .copyright {
   font-size: 14px;
   color: #aaa;
+  text-align: center;
 }
 
 /*
