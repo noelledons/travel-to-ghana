@@ -1,344 +1,395 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-/* Body */
-body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Montserrat'sans-serif;
-  color: #222;
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+  <title> Travel to Ghana </title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- StyleSheets -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e49e32fca2.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- jQuery, Popper.js, and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Load icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+</head>
 
-p {
-  font-family: 'Poppins', sans-serif;
-}
+<body>
 
-.titles1 {
-  font-family: 'Caveat Brush', cursive;
-  font-size: 70px;
-}
+  <!-- Header Section -->
+  <section>
+    <div class="s002">
+      <form>
+        <fieldset>
+          <legend class="search-header">SEARCH GHANA</legend>
+        </fieldset>
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              </svg>
+            </div>
+            <input id="search" type="text" placeholder="Choose Your Destination" />
+          </div>
+          <div class="input-field second-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              </svg>
+            </div>
+            <input class="datepicker" id="depart" type="text" placeholder="14 Feb 2021" />
+          </div>
+          <div class="input-field third-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              </svg>
+            </div>
+            <input class="datepicker" id="return" type="text" placeholder="15 Feb 2021" />
+          </div>
+          <div class="input-field fouth-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              </svg>
+            </div>
+            <select data-trigger="" name="choices-single-defaul">
+              <option placeholder="">1 Adults</option>
+              <option>2 Adults</option>
+              <option>3 Adults</option>
+              <option>4 Adults+</option>
+            </select>
+          </div>
+          <div class="input-field fifth-wrap">
+            <button class="btn-search" type="button">SEARCH</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Javascript -->
+    <script src="js/choices.js"></script>
+    <script src="js/flatpickr.js"></script>
+    <script>
+      flatpickr(".datepicker", {});
+    </script>
+    <script>
+      const choices = new Choices('[data-trigger]', {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+    </script>
+  </section>
 
-hr {
-  border-top: 2px solid #b4b4b4;
-  width: 75%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
-}
+  <!-- Why Ghana Section -->
+  <section id="welcome">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1> <span> Why Ghana? </span> </h1>
+        </div>
 
-/* Button */
-.about-btn {
-  margin-top: 39px;
-  letter-spacing: 1.2px;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-landmark"></i>
+          <h3> Rich History </h3>
+          <p>Ghana was once the seat of a flourishing empire grown rich from the country’s massive gold deposits – the Ashanti kingdom.
+          <p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-users"></i>
+          <h3> Cultural Diversity </h3>
+          <p> Music festivals and monthly traditional festivals are ways to loosen up and celebrate life, with music, dance and plenty of food.
+          <p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <i class="fab fa-wpexplorer"></i>
+          <h3> Adventure </h3>
+          <p>Ghana is home to spectacular national parks – Kakum, Bia and the Mole National Park, home to thousands of wildlife and exotic bird-life.
+          <p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.about-view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #00d8ff;
-  border: 1px solid #00d8ff;
-  width: 200px;
-  height: 60px;
-  white-space: nowrap;
-  color: #fff;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  border-radius: 5px;
-  box-shadow: 0 5px 20px rgba(14, 15, 18, .2);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
+  <!--Top Destinations-->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="gallery-details">
+        <div class="gallery-header text-center">
+          <h1>
+            Top Destinations
+          </h1>
+          <p>
+            View some of Ghana's top destinations.
+          </p>
+        </div>
+        <!-- Images -->
+        <div class="gallery-box">
+          <div class="gallery-content">
+            <div class="filtr-container">
+              <div class="row">
 
-.about-btn:hover .about-view {
-  color: #fff;
-  background: #00d8d5;
-  box-shadow: 0 5px 20px rgba(14, 15, 18, .7);
-  border: 1px solid #00d8d5;
-}
+                <div class="col-md-6">
+                  <div class="filtr-item">
+                    <img src="img/accra.jpg" alt="portfolio image" />
+                    <div class="item-title">
+                      <a href="#">
+                        Accra
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-/* Welcome section */
-#welcome .container-fluid {
-  padding: 5% 12%;
-  padding-bottom: 0%;
-  background: #f9f9f9;
-}
+                <div class="col-md-6">
+                  <div class="filtr-item">
+                    <img src="img/kumasi.jpg" alt="portfolio image" />
+                    <div class="item-title">
+                      <a href="#">
+                        Kumasi
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-.fa-landmark, .fa-users, .fa-wpexplorer {
-  ;
-  margin: 1rem;
-  font-size: 4em;
-  color: #00d8d5;
-}
+                <div class="col-md-4">
+                  <div class="filtr-item">
+                    <img src="img/tamale.jpg" alt="portfolio image" />
+                    <div class="item-title">
+                      <a href="#">
+                        Tamale
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-/* Gallery */
-.gallery {
-  background: #f9f9f9;
-  padding-top: 15px;
-}
+                <div class="col-md-4">
+                  <div class="filtr-item">
+                    <img src="img/tema.jpg" alt="portfolio image" />
+                    <div class="item-title">
+                      <a href="#">
+                        Tema
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-.gallery-details {
-  margin-top: 117px;
-  margin-bottom: 109px;
-}
+                <div class="col-md-4">
+                  <div class="filtr-item">
+                    <img src="img/capecoast.jpg" alt="portfolio image" />
+                    <div class="item-title">
+                      <a href="#">
+                        Cape Coast
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-.gallery-content {
-  margin-top: 62px;
-}
+                <div class="col-md-8">
+                  <div class="filtr-item">
+                    <img src="img/sekondi-takoradi.jpg" alt="portfolio image" />
+                    <div class="item-title">
+                      <a href="#">
+                        Sekondi-Takoradi
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-.gallery-header p {
-  position: relative;
-  color: #aaa;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 17px;
-}
+                <div class="col-md-4">
+                  <div class="filtr-item">
+                    <img src="img/sunyani.jpg" alt="portfolio image" />
+                    <div class="item-title">
+                      <a href="#">
+                        Sunyani
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.filtr-container .filtr-item {
-  overflow: hidden;
-  float: left;
-  position: relative;
-  margin-bottom: 30px;
-  overflow: hidden;
-}
 
-.filtr-container .filtr-item img {
-  width: 100%;
-  height: 100%;
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-}
+  <!--Pakages-->
+  <section id="pack" class="packages">
+    <div class="container">
+      <div class="gallery-header text-center">
+        <h1>
+          Special Packages
+        </h1>
+        <p>
+          View some of our best deals for your trip to Ghana!
+        </p>
+      </div>
+      <div class="packages-content">
+        <div class="row">
+          <!-- Ghana -->
+          <div class="col-md-4 col-sm-6">
+            <div class="single-package-item">
+              <img src="img/accramall.jpg" alt="package-place">
+              <div class="single-package-item-txt">
+                <h3> Accra <span class="pull-right">£600</span></h3>
+                <div class="packages-para">
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> 7 days 8 nights
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> Free Transport
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> Discounted Food
+                    </span>
+                  </p>
+                </div>
 
-.filtr-container .filtr-item:hover img {
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5);
-}
+                <div class="packages-review">
+                  <p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span>765 reviews</span>
+                  </p>
+                </div>
 
-.item-title {
-  position: absolute;
-  background: transparent;
-  bottom: 20%;
-  left: 60px;
-  width: 170px;
-  height: 60px;
-  -webkit-transition: all 0.6s linear;
-  -moz-transition: all 0.6s linear;
-  -ms-transition: all 0.6s linear;
-  -o-transition: all 0.6s linear;
-  transition: all 0.6s linear;
-}
+                <div class="about-btn">
+                  <button class="about-view packages-btn">
+                    Book now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-.item-title a {
-  color: #fff;
-  font-size: 24px;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
-  margin-bottom: 3px;
-  text-shadow: #aaa 1px 0 10px;
-  -webkit-transition: all 0.6s linear;
-  -moz-transition: all 0.6s linear;
-  -ms-transition: all 0.6s linear;
-  -o-transition: all 0.6s linear;
-  transition: all 0.6s linear;
-}
+          <!-- Kumasi -->
+          <div class="col-md-4 col-sm-6">
+            <div class="single-package-item">
+              <img src="img/kumasibeach.jpg" alt="package-place">
+              <div class="single-package-item-txt">
+                <h3>Kumasi <span class="pull-right">£550</span></h3>
+                <div class="packages-para">
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> 4 days 3 nights
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> Free Transport
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> 10% Discount
+                    </span>
+                  </p>
+                </div>
 
-.item-title p {
-  color: #fff;
-  font-size: 16px;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  -webkit-transition: all 0.6s linear;
-  -moz-transition: all 0.6s linear;
-  -ms-transition: all 0.6s linear;
-  -o-transition: all 0.6s linear;
-  transition: all 0.6s linear;
-}
+                <div class="packages-review">
+                  <p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span>801 reviews</span>
+                  </p>
+                </div>
 
-.item-title p span {
-  padding-right: 30px;
-}
+                <div class="about-btn">
+                  <button class="about-view packages-btn">
+                    Book now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-.filtr-container .filtr-item:hover .item-title a,
-.filtr-container .filtr-item:hover .item-title p {
-  color: #2cdbb5;
-}
+          <!-- Tema -->
+          <div class="col-md-4 col-sm-6">
+            <div class="single-package-item">
+              <img src="img/temamarket.jpg" alt="package-place">
+              <div class="single-package-item-txt">
+                <h3>Tema<span class="pull-right">£490</span></h3>
+                <div class="packages-para">
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> 3 days 2 nights
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> Free Transport
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      <i class="fa fa-angle-right"></i> 10% off Tours
+                    </span>
+                  </p>
+                </div>
 
-/* Packages */
-.packages {
-  padding: 0 0 90px;
-}
+                <div class="packages-review">
+                  <p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span>670 reviews</span>
+                  </p>
+                </div>
 
-.packages-content {
-  margin-top: 65px;
-}
+                <div class="about-btn">
+                  <button class="about-view packages-btn">
+                    Book now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-.single-package-item {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-}
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
-.single-package-item-txt {
-  padding: 0 25px;
-}
+  <!-- Footer -->
 
-.single-package-item img {
-  width: 100%;
-}
+  <section>
+    <footer id="footer1">
+      <div class="container-fluid">
+          <h1 class= "footer-head"> Want to know more? Connect with us. </h1>
+          <a href="#"><i class="social fab fa-facebook-f"></i></a>
+          <a href="#"><i class="social fab fa-instagram"></i></a>
+          <a href="#"><i class="social fab fa-twitter"></i></a>
+          <a href="#"><i class="social fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="social fab fa-youtube"></i></a>
+        </div>
 
-.single-package-item h3 {
-  position: relative;
-  font-size: 20px;
-  color: #565a5c;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  padding: 20px 0;
-}
+        <hr class="hrstyle">
+        <p class = "copyright"> © Copyright 2021 | Designed by Noelle Donkor </p>
+      </div>
+    </footer>
+  </section>
 
-.single-package-item h3:after {
-  position: absolute;
-  content: " ";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #ebebeb;
-}
+</body>
 
-.packages-para {
-  padding: 17px 0 0;
-  text-transform: capitalize;
-}
-
-.packages-para p {
-  font-size: 14px;
-  color: #aaa;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 15px;
-}
-
-.packages-para p span {
-  display: inline-block;
-  width: 150px;
-}
-
-.packages-review p i {
-  color: #ffdf00;
-  font-size: 16px;
-}
-
-.packages-review span {
-  margin-left: 20px;
-  font-size: 14px;
-  color: #aaa;
-  font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
-}
-
-.about-view.packages-btn {
-  width: 110px;
-  height: 35px;
-  font-size: 14px;
-  color: #fff;
-  text-transform: capitalize;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-}
-
-.about-view.packages-btn:hover {
-  box-shadow: 0 5px 20px rgba(14, 15, 18, .3);
-}
-
-.single-package-item:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-}
-
-/* Connect */
-#footer1 .container-fluid {
-  padding: 5% 12%;
-  background: #fff;
-  text-align: center;
-}
-
-.footer-head {
-  padding-bottom: 5%;
-}
-
-.social {
-  padding: 20px;
-  font-size: 3rem;
-  margin: 20px 10px;
-}
-
-.fa-facebook-f,
-.fa-twitter,
-.fa-google-plus-g,
-.fa-instagram,
-.fa-youtube {
-  color: #00d8d5;
-}
-
-.fa-facebook-f:hover,
-.fa-twitter:hover,
-.fa-google-plus-g:hover,
-.fa-instagram:hover,
-.fa-youtube:hover {
-  color: #7F8C8D;
-}
-
-.hrstyle {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.copyright {
-  font-size: 14px;
-  color: #aaa;
-  text-align: center;
-}
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*
+</html>
