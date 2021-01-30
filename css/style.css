@@ -282,7 +282,7 @@ hr {
 
 /* Connect */
 #footer1 .container-fluid {
-  padding: 5% 12%;
+  padding: 5% 15%;
   background: #fff;
   text-align: center;
 }
@@ -293,8 +293,8 @@ hr {
 
 .social {
   padding: 20px;
-  font-size: 3rem;
-  margin: 20px 10px;
+  font-size: 2rem;
+  margin: 15px 5px;
 }
 
 .fa-facebook-f,
