@@ -1,11 +1,11 @@
 # Travel to Ghana
 
-You can find the website [here](https://noelledons.github.io/travel-to-ghana/).
+This project can be viewed [here](https://noelledons.github.io/travel-to-ghana/).
 
 ## Summary
-Travel booking page for users travelling to Ghana, Africa. Users are able to select their chosen destination, date and number of Adults. Additionally, they can see why they should travel to Ghana, top destinations and special packages available for their trip.
+A static travel booking page for customers booking a flight to Ghana, Africa. The website allows users to type in a destination and select their preferred date. Additionally, users will be able to see top locations and packages available for their trip. 
 
-## Languages
+## Languages Used
 - HTML
 - CSS
 - Javascript (jQuery, Popper.js)
@@ -17,9 +17,3 @@ Travel booking page for users travelling to Ghana, Africa. Users are able to sel
 - Font Awesome
 - Google Fonts
 - Favicon
-
-## Available Scripts
-In the project directory, you can find the code for:
- - Index (HMTL)
- - Styling (CSS)
- - Functionality (JS)
