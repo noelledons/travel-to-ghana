@@ -3,7 +3,7 @@
 This project can be viewed [here](https://noelledons.github.io/travel-to-ghana/).
 
 ## Summary
-A static travel booking page for customers booking a flight to Ghana, Africa. The website allows users to type in a destination and select their preferred date. Additionally, users will be able to see top locations and packages available for their trip. 
+A static travel booking page for customers booking a flight to Ghana. The website allows users to type in a destination and select their preferred departure and return dates. Additionally, users will be able to see top locations and packages available for their trip. 
 
 ## Languages Used
 - HTML
