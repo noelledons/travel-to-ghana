@@ -1,4 +1,4 @@
-# Travel to Ghana
+# Travel to Ghana Website
 
 This project can be viewed [here](https://noelledons.github.io/travel-to-ghana/).
 
